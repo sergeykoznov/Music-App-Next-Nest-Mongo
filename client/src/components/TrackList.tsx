@@ -13,7 +13,7 @@ const TrackList: React.FC<TrackListProps> = ({ tracks }) => {
       <Box p={2}>
         {tracks.map((track) => (
           <TrackItem 
-          key={track.id}
+          key={track._id}
           track={track}
           />
         ))}

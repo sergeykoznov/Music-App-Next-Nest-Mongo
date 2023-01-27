@@ -19,13 +19,13 @@ import { FileFieldsInterceptor } from '@nestjs/platform-express';
 export class TrackController {
   constructor(private trackService: TrackService) {}
 
+  @Post()
   @UseInterceptors(
     FileFieldsInterceptor([
       { name: 'picture', maxCount: 1 },
-      { name: 'audio ', maxCount: 1 },
+      { name: 'audio', maxCount: 1 },
     ]),
   )
-  @Post()
   create(@UploadedFiles() files, @Body() dto: CreateTrackDto) {
     const { picture, audio } = files;
     return this.trackService.create(dto, picture[0], audio[0]);

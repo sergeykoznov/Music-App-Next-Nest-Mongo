@@ -8,6 +8,8 @@ export interface PlayerState {
   currentTime: number;
 }
 
+// ! Not being used
+/* 
 export enum PlayerActionTypes {
   PLAY = "PLAY",
   PAUSE = "PAUSE",
@@ -44,8 +46,6 @@ interface SetCurrectTimeAction {
   payload: number;
 }
 
-
-
 export type PlayerAction =
   | PlayAction
   | PauseAction
@@ -54,3 +54,4 @@ export type PlayerAction =
   | SetDurationAction
   | SetCurrectTimeAction
 
+*/

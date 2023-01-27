@@ -1,16 +1,21 @@
 export interface IComment {
-  id: string;
+  _id: string;
   username: string;
   text: string;
 }
 
 export interface ITrack {
-  id: string;
+  _id: string;
   name: string;
   artist: string;
   text: string;
-  listeners: number;
+  listens: number;
   picture: string;
   audio: string;
   comments: IComment[];
+}
+
+export interface TrackState {
+  tracks: ITrack[];
+  error: string;
 }

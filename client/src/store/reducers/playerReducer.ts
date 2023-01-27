@@ -1,3 +1,6 @@
+import {} from "types/player";
+
+/*
 import { PlayerAction, PlayerActionTypes, PlayerState } from "types/player";
 
 const initialState: PlayerState = {
@@ -8,7 +11,8 @@ const initialState: PlayerState = {
   volume: 0,
 };
 
-export const playerReducer = (
+
+const playerReducer = (
   state = initialState,
   action: PlayerAction
 ): PlayerState => {
@@ -29,3 +33,4 @@ export const playerReducer = (
       return state;
   }
 };
+*/

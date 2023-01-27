@@ -1,4 +1,3 @@
-import NavBar from "@/components/NavBar/NavBar";
 import MainLayout from "@/layouts/MainLayout";
 
 const Index = () => {
